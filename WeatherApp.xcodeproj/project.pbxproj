@@ -67,20 +67,6 @@
 			path = "API Service";
 			sourceTree = "<group>";
 		};
-		EB55D1542B4B78C4003AC9C9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		EB55D1552B4B78D8003AC9C9 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		EB7329562B462CE400C004A7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +86,6 @@
 		EB7329612B462CE400C004A7 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				EB55D1552B4B78D8003AC9C9 /* Common */,
-				EB55D1542B4B78C4003AC9C9 /* Controllers */,
 				EB55D1532B4B78AC003AC9C9 /* API Service */,
 				EB55D1522B4B7896003AC9C9 /* Models */,
 				EB55D14D2B479D87003AC9C9 /* ViewModels */,

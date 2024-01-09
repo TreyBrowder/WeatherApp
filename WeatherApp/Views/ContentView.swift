@@ -13,34 +13,19 @@ struct ContentView: View {
             LinearGradient(gradient: Gradient(colors: [.blue, .purple, .red]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea(.all)
             
-            VStack {
-                HeaderView()
-                    .padding(.bottom,25)
-                HourlyView()
-                    .padding(.bottom,25)
-                DailyView()
-                
-                Spacer()
+            ScrollView(showsIndicators: false){
+                VStack {
+                    HeaderView()
+                        .padding(.bottom,25)
+                    HourlyView()
+                        .padding(.bottom,25)
+                    DailyView()
+                    
+                    Spacer()
+                }
             }
         }
         
-    }
-}
-
-struct DailyView: View {
-    var body: some View {
-        ScrollView(.horizontal,showsIndicators: false){
-            Image(systemName: "moon.fill")
-                .renderingMode(.original)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 35, height: 35, alignment: .center)
-            Text("placeDay")
-                .bold()
-                .foregroundColor(.white)
-            Text("placeDate")
-                .foregroundColor(.white)
-        }
     }
 }
 

@@ -18,3 +18,13 @@ class HourData: ObservableObject {
     var hour = "1PM"
     var imageURL = ""
 }
+
+class DayData: ObservableObject {
+    var day = "monday"
+    var high = "72°F"
+    var low = "62°"
+}
+
+class DailyModel: ObservableObject {
+    var data: [DayData] = []
+}

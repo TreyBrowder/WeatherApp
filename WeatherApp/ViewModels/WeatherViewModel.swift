@@ -10,4 +10,5 @@ import SwiftUI
 
 class WeatherViewModel: ObservableObject {
     var headerViewModel = HeaderViewModel()
+    var hourlyModel = HourlyModel()
 }

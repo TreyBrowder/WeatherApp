@@ -14,7 +14,11 @@ struct ContentView: View {
                 .ignoresSafeArea(.all)
             
             VStack {
-               HeaderView()
+                HeaderView()
+                    .padding(.bottom,25)
+                HourlyView()
+                    .padding(.bottom,25)
+                DailyView()
                 
                 Spacer()
             }
@@ -23,9 +27,25 @@ struct ContentView: View {
     }
 }
 
+struct DailyView: View {
+    var body: some View {
+        ScrollView(.horizontal,showsIndicators: false){
+            Image(systemName: "moon.fill")
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 35, height: 35, alignment: .center)
+            Text("placeDay")
+                .bold()
+                .foregroundColor(.white)
+            Text("placeDate")
+                .foregroundColor(.white)
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            
     }
 }

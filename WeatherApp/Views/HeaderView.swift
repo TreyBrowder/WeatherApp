@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    var viewModel = WeatherViewModel()
+    @EnvironmentObject var viewModel: WeatherViewModel
     
     var body: some View {
         VStack(spacing: 0) {
@@ -54,6 +54,7 @@ struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView()
             .preferredColorScheme(.dark)
+            .environmentObject(WeatherViewModel())
             
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DailyView: View {
     
-    var viewModel = WeatherViewModel()
+    @EnvironmentObject var viewModel: WeatherViewModel
     
     var body: some View {
         VStack {
@@ -25,5 +25,6 @@ struct DailyView_Previews: PreviewProvider {
     static var previews: some View {
         DailyView()
             .preferredColorScheme(.dark)
+            .environmentObject(WeatherViewModel())
     }
 }

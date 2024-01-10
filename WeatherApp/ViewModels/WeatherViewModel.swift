@@ -9,7 +9,11 @@ import Foundation
 import SwiftUI
 
 class WeatherViewModel: ObservableObject {
-    var headerViewModel = HeaderViewModel()
-    var hourlyModel = HourlyModel()
-    var dailyModdel = DailyModel()
+    @Published var headerViewModel = HeaderViewModel()
+    @Published var hourlyData: [HourData] = []
+    @Published var dailyData: [DayData] = []
+    
+    func fetchData(){
+        //get data and location info
+    }
 }

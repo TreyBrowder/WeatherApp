@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HourlyView: View {
     
-    var viewModel = WeatherViewModel()
+    @EnvironmentObject var viewModel: WeatherViewModel
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -27,5 +27,6 @@ struct HourlyView_Previews: PreviewProvider {
     static var previews: some View {
         HourlyView()
             .preferredColorScheme(.dark)
+            .environmentObject(WeatherViewModel())
     }
 }

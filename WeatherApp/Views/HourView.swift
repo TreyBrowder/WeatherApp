@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HourView: View {
     
+    @EnvironmentObject var viewModel: WeatherViewModel
+    
     var model: HourData
     
     var body: some View {
@@ -31,5 +33,6 @@ struct HourView: View {
 struct HourView_Previews: PreviewProvider {
     static var previews: some View {
         HourView(model: HourData())
+            .environmentObject(WeatherViewModel())
     }
 }

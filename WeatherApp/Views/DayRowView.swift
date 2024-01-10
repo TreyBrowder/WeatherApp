@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DayRowView: View {
     
+    @EnvironmentObject var viewModel: WeatherViewModel
+    
     var model: DayData
     
     var body: some View {
@@ -39,5 +41,6 @@ struct DayRowView_Previews: PreviewProvider {
     static var previews: some View {
         DayRowView(model: DayData())
             .preferredColorScheme(.dark)
+            .environmentObject(WeatherViewModel())
     }
 }

@@ -13,6 +13,10 @@ class WeatherViewModel: ObservableObject {
     @Published var hourlyData: [HourData] = []
     @Published var dailyData: [DayData] = []
     
+    init(){
+        fetchData()
+    }
+    
     func fetchData(){
         //get data and location info
     }

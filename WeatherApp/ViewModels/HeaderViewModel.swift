@@ -12,4 +12,7 @@ class HeaderViewModel: ObservableObject {
     var location: String = "Columbus, OH"
     var currentTemp: String = "68°"
     var currentConditions: String = "Clear"
+    var iconURLString: String = "https://www.apple.com"
+    var high: String = "170°"
+    var low: String = "170°"
 }

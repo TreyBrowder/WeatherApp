@@ -10,6 +10,8 @@
 		EB0F2BAC2B50C6C500FBA360 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */; };
 		EB0F2BAE2B51BD9700FBA360 /* Exentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAD2B51BD9700FBA360 /* Exentsions.swift */; };
 		EB0F2BB02B51C72300FBA360 /* DayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */; };
+		EB0F2BB32B51D86B00FBA360 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = EB0F2BB22B51D86B00FBA360 /* SwURL */; };
+		EB0F2BB52B51DF9C00FBA360 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */; };
 		EB55D14F2B479DBB003AC9C9 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */; };
 		EB55D1512B479E02003AC9C9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */; };
 		EB55D1572B4B8CBC003AC9C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */; };
@@ -28,6 +30,7 @@
 		EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		EB0F2BAD2B51BD9700FBA360 /* Exentsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exentsions.swift; sourceTree = "<group>"; };
 		EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDataModel.swift; sourceTree = "<group>"; };
+		EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0F2BB32B51D86B00FBA360 /* SwURL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 			children = (
 				EB55D1582B4CCA69003AC9C9 /* HourDataModel.swift */,
 				EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */,
+				EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +153,9 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				EB0F2BB22B51D86B00FBA360 /* SwURL */,
+			);
 			productName = WeatherApp;
 			productReference = EB73295F2B462CE400C004A7 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -176,6 +184,9 @@
 				Base,
 			);
 			mainGroup = EB7329562B462CE400C004A7;
+			packageReferences = (
+				EB0F2BB12B51D86B00FBA360 /* XCRemoteSwiftPackageReference "SwURL" */,
+			);
 			productRefGroup = EB7329602B462CE400C004A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -212,6 +223,7 @@
 				EB7329632B462CE400C004A7 /* WeatherAppApp.swift in Sources */,
 				EB55D14F2B479DBB003AC9C9 /* HeaderViewModel.swift in Sources */,
 				EB55D1612B4E0ED3003AC9C9 /* DailyView.swift in Sources */,
+				EB0F2BB52B51DF9C00FBA360 /* LocationManager.swift in Sources */,
 				EB55D15F2B4E0E8B003AC9C9 /* DayRowView.swift in Sources */,
 				EB0F2BB02B51C72300FBA360 /* DayDataModel.swift in Sources */,
 				EB0F2BAE2B51BD9700FBA360 /* Exentsions.swift in Sources */,
@@ -348,6 +360,8 @@
 				DEVELOPMENT_TEAM = NT57WH95JN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +391,8 @@
 				DEVELOPMENT_TEAM = NT57WH95JN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +433,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB0F2BB12B51D86B00FBA360 /* XCRemoteSwiftPackageReference "SwURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cmtrounce/SwURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB0F2BB22B51D86B00FBA360 /* SwURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB0F2BB12B51D86B00FBA360 /* XCRemoteSwiftPackageReference "SwURL" */;
+			productName = SwURL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB7329572B462CE400C004A7 /* Project object */;
 }

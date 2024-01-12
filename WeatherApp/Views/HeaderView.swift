@@ -5,7 +5,7 @@
 //  Created by Trey Browder on 1/7/24.
 //
 
-import Foundation
+import SwURL
 import SwiftUI
 
 struct HeaderView: View {
@@ -19,11 +19,18 @@ struct HeaderView: View {
                 .foregroundColor(.white)
                 .font(.system(size: 36))
             
-            Image(systemName: "sunset.fill")
-                .renderingMode(.original)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 190, height: 190, alignment: .center)
+            SwURLImage(url: URL(string: viewModel.headerViewModel.iconURLString)!,
+                            placeholderImage: Image(systemName: "sunset.fill"),
+                            transition: .none
+            )
+            .imageProcessing({ image in
+                return image
+                    .renderingMode(.original)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 190, height: 190, alignment: .center)
+            })
+                
             
             Text(viewModel.headerViewModel.currentTemp)
                 .bold()

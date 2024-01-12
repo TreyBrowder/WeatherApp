@@ -12,5 +12,5 @@ class HourData: ObservableObject, Identifiable {
     var id = UUID()
     var temp = "55°"
     var hour = "1PM"
-    var imageURL = ""
+    var imageURL = "https://www.apple.com"
 }

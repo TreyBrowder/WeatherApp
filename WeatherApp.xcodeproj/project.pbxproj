@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0F2BAC2B50C6C500FBA360 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */; };
 		EB55D14F2B479DBB003AC9C9 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */; };
 		EB55D1512B479E02003AC9C9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */; };
 		EB55D1572B4B8CBC003AC9C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		EB55D1532B4B78AC003AC9C9 /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */,
 			);
 			path = "API Service";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				EB55D15B2B4CCE88003AC9C9 /* HourView.swift in Sources */,
 				EB55D1572B4B8CBC003AC9C9 /* HeaderView.swift in Sources */,
 				EB7329652B462CE400C004A7 /* ContentView.swift in Sources */,
+				EB0F2BAC2B50C6C500FBA360 /* APIResponse.swift in Sources */,
 				EB55D1512B479E02003AC9C9 /* WeatherViewModel.swift in Sources */,
 				EB7329632B462CE400C004A7 /* WeatherAppApp.swift in Sources */,
 				EB55D14F2B479DBB003AC9C9 /* HeaderViewModel.swift in Sources */,

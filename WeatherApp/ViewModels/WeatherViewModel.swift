@@ -30,6 +30,15 @@ class WeatherViewModel: ObservableObject {
                 return
             }
             
+            let result: APIResponse?
+            do {
+                result = try JSONDecoder().decode(APIResponse.self, from: data)
+                print(result ?? "no data")
+                return
+            }
+            catch {
+                print(error)
+            }
             
         }
         task.resume()

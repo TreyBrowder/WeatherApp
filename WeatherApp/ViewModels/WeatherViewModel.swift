@@ -30,11 +30,35 @@ class WeatherViewModel: ObservableObject {
                 return
             }
             
-            let result: APIResponse?
+            
             do {
-                result = try JSONDecoder().decode(APIResponse.self, from: data)
-                print(result ?? "no data")
-                return
+                let result = try JSONDecoder().decode(APIResponse.self, from: data)
+                
+                DispatchQueue.main.async {
+                    
+                    //this will show current data - current temp and conditions
+                    let headerVM = HeaderViewModel()
+                    headerVM.currentTemp = "\(Int(result.current.temp))°F"
+                    headerVM.currentConditions = result.current.weather.first?.main ?? "-"
+                    self.headerViewModel = headerVM
+                    
+                    //this will show hourly data
+                    self.hourlyData = result.hourly.compactMap({
+                        let data = HourData()
+                        data.temp = "\(Int($0.temp))°"
+                        data.hour = String.hour(from: $0.dt)
+                        return data
+                    })
+                    
+                    //this will show daily data
+                    self.dailyData = result.daily.compactMap({
+                        let data = DayData()
+                        data.day = String.day(from: $0.dt)
+                        data.high = "\(Int($0.temp.max))°F"
+                        data.low = "\(Int($0.temp.min))°F"
+                        return data
+                    })
+                }
             }
             catch {
                 print(error)

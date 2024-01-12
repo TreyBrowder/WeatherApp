@@ -36,12 +36,12 @@ struct HeaderView: View {
                 .font(.system(size: 25))
             
             HStack {
-                Text("H:76°")
+                Text("High: -°F")
                     .bold()
                     .foregroundColor(.white)
                     .font(.system(size: 20))
                 
-                Text("L:58°")
+                Text("Low: -°F")
                     .bold()
                     .foregroundColor(.white)
                     .font(.system(size: 20))

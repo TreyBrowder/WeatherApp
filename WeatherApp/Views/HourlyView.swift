@@ -14,8 +14,8 @@ struct HourlyView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(0...23, id: \.self) {num in
-                    HourView(model: HourData())
+                ForEach(viewModel.hourlyData) {model in
+                    HourView(model: model)
                 }
                 .padding(.horizontal,10)
             }

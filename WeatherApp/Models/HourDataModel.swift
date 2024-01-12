@@ -8,14 +8,9 @@
 import Foundation
 import SwiftUI
 
-class HourData: ObservableObject {
+class HourData: ObservableObject, Identifiable {
+    var id = UUID()
     var temp = "55°"
     var hour = "1PM"
     var imageURL = ""
-}
-
-class DayData: ObservableObject {
-    var day = "monday"
-    var high = "72°F"
-    var low = "62°"
 }

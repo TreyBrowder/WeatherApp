@@ -8,12 +8,15 @@
 import Foundation
 
 struct APIResponse: Codable {
-   
     let lat: Float
     let lon: Float
     let current: Current
-    let hourly: [HourModel]
-    let daily: [DayModel]
+    
+    //array to hold keys/value for hourly weather data
+    let hourly: [HourResponse]
+    
+    //array to hold key/value for daily weather
+    let daily: [DayResponse]
 }
 
 struct Current: Codable {
@@ -22,12 +25,13 @@ struct Current: Codable {
 }
 
 //hourly
-struct HourModel: Codable {
+struct HourResponse: Codable {
     let dt: Float
     let temp: Double
     let weather: [Info]
 }
 
+//struct to hold current weather info
 struct Info: Codable {
     let id: Int
     let main: String
@@ -37,7 +41,7 @@ struct Info: Codable {
 
 
 //daily
-struct DayModel: Codable {
+struct DayResponse: Codable {
     let dt: Float
     let temp: Temp
 }

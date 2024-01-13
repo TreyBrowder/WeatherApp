@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		EB0F2BAC2B50C6C500FBA360 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */; };
 		EB0F2BAE2B51BD9700FBA360 /* Exentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAD2B51BD9700FBA360 /* Exentsions.swift */; };
-		EB0F2BB02B51C72300FBA360 /* DayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */; };
+		EB0F2BB02B51C72300FBA360 /* DayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BAF2B51C72300FBA360 /* DayData.swift */; };
 		EB0F2BB32B51D86B00FBA360 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = EB0F2BB22B51D86B00FBA360 /* SwURL */; };
 		EB0F2BB52B51DF9C00FBA360 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */; };
 		EB55D14F2B479DBB003AC9C9 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */; };
 		EB55D1512B479E02003AC9C9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */; };
 		EB55D1572B4B8CBC003AC9C9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */; };
-		EB55D1592B4CCA69003AC9C9 /* HourDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1582B4CCA69003AC9C9 /* HourDataModel.swift */; };
+		EB55D1592B4CCA69003AC9C9 /* HourData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D1582B4CCA69003AC9C9 /* HourData.swift */; };
 		EB55D15B2B4CCE88003AC9C9 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D15A2B4CCE88003AC9C9 /* HourView.swift */; };
 		EB55D15D2B4CCEAB003AC9C9 /* HourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D15C2B4CCEAB003AC9C9 /* HourlyView.swift */; };
 		EB55D15F2B4E0E8B003AC9C9 /* DayRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB55D15E2B4E0E8B003AC9C9 /* DayRowView.swift */; };
@@ -29,12 +29,12 @@
 /* Begin PBXFileReference section */
 		EB0F2BAB2B50C6C500FBA360 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		EB0F2BAD2B51BD9700FBA360 /* Exentsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exentsions.swift; sourceTree = "<group>"; };
-		EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDataModel.swift; sourceTree = "<group>"; };
+		EB0F2BAF2B51C72300FBA360 /* DayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayData.swift; sourceTree = "<group>"; };
 		EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EB55D14E2B479DBB003AC9C9 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		EB55D1502B479E02003AC9C9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		EB55D1562B4B8CBC003AC9C9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		EB55D1582B4CCA69003AC9C9 /* HourDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourDataModel.swift; sourceTree = "<group>"; };
+		EB55D1582B4CCA69003AC9C9 /* HourData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourData.swift; sourceTree = "<group>"; };
 		EB55D15A2B4CCE88003AC9C9 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
 		EB55D15C2B4CCEAB003AC9C9 /* HourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyView.swift; sourceTree = "<group>"; };
 		EB55D15E2B4E0E8B003AC9C9 /* DayRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRowView.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		EB55D1522B4B7896003AC9C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB55D1582B4CCA69003AC9C9 /* HourDataModel.swift */,
-				EB0F2BAF2B51C72300FBA360 /* DayDataModel.swift */,
+				EB55D1582B4CCA69003AC9C9 /* HourData.swift */,
+				EB0F2BAF2B51C72300FBA360 /* DayData.swift */,
 				EB0F2BB42B51DF9C00FBA360 /* LocationManager.swift */,
 			);
 			path = Models;
@@ -213,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB55D1592B4CCA69003AC9C9 /* HourDataModel.swift in Sources */,
+				EB55D1592B4CCA69003AC9C9 /* HourData.swift in Sources */,
 				EB55D15D2B4CCEAB003AC9C9 /* HourlyView.swift in Sources */,
 				EB55D15B2B4CCE88003AC9C9 /* HourView.swift in Sources */,
 				EB55D1572B4B8CBC003AC9C9 /* HeaderView.swift in Sources */,
@@ -225,7 +225,7 @@
 				EB55D1612B4E0ED3003AC9C9 /* DailyView.swift in Sources */,
 				EB0F2BB52B51DF9C00FBA360 /* LocationManager.swift in Sources */,
 				EB55D15F2B4E0E8B003AC9C9 /* DayRowView.swift in Sources */,
-				EB0F2BB02B51C72300FBA360 /* DayDataModel.swift in Sources */,
+				EB0F2BB02B51C72300FBA360 /* DayData.swift in Sources */,
 				EB0F2BAE2B51BD9700FBA360 /* Exentsions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

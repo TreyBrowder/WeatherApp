@@ -42,17 +42,17 @@ class WeatherViewModel: ObservableObject {
                 
                 do {
                     let result = try JSONDecoder().decode(APIResponse.self, from: data)
+                    //check api call - print the result to check console for current response from the api
+                    //print(result ?? "error with api call")
                     
+                    //update the UI View
                     DispatchQueue.main.async {
                         
                         //this will show current data - current temp and conditions
                         self.headerViewModel.currentTemp = "\(Int(result.current.temp))°F"
                         self.headerViewModel.currentConditions = result.current.weather.first?.main ?? "-"
                         self.headerViewModel.iconURLString = String.iconUrlString(for: result.current.weather.first?.icon ?? "-")
-                        
-                        //display the current days high and low if possible based on API
-                        
-                        
+                                           
                         //this will show hourly data
                         self.hourlyData = result.hourly.compactMap({
                             let data = HourData()

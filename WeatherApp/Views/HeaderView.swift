@@ -20,8 +20,8 @@ struct HeaderView: View {
                 .font(.system(size: 36))
             
             SwURLImage(url: URL(string: viewModel.headerViewModel.iconURLString)!,
-                            placeholderImage: Image(systemName: "sunset.fill"),
-                            transition: .none
+                       placeholderImage: Image(systemName: "sunset.fill"),
+                       transition: .none
             )
             .imageProcessing({ image in
                 return image
@@ -30,7 +30,7 @@ struct HeaderView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 190, height: 190, alignment: .center)
             })
-                
+            
             
             Text(viewModel.headerViewModel.currentTemp)
                 .bold()
@@ -41,18 +41,6 @@ struct HeaderView: View {
                 .bold()
                 .foregroundColor(.white)
                 .font(.system(size: 25))
-            
-            HStack {
-                Text("High: -°F")
-                    .bold()
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-                
-                Text("Low: -°F")
-                    .bold()
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-            }
         }
     }
 }
@@ -62,7 +50,7 @@ struct HeaderView_Previews: PreviewProvider {
         HeaderView()
             .preferredColorScheme(.dark)
             .environmentObject(WeatherViewModel())
-            
+        
     }
 }
 
